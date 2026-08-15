@@ -1,31 +1,21 @@
 # Pizza Sales Analytics Dashboard
+An interactive, two-page Power BI report built to analyze a full year of pizza order transactions — surfacing revenue trends, order patterns, and product-level performance to separate best sellers from underperformers.
 
-An end-to-end Power BI dashboard analyzing pizza sales data to uncover revenue trends, peak periods, and product performance.
+## Short Description / Purpose
+The Pizza Sales Dashboard is a visually engaging and analytical Power BI report designed to help restaurant managers, franchise operators, and data analysts understand how a pizzeria performed across 2015. It tracks core sales KPIs (revenue, orders, pizzas sold), visualizes daily and monthly ordering trends, breaks sales down by pizza category and size, and ranks every menu item by revenue, quantity sold, and order count — making it easy to spot what's driving sales and what belongs on the chopping block.
 
-## Dashboard Preview
-![Dashboard](<img width="1179" height="649" alt="image" src="https://github.com/user-attachments/assets/e74d9b55-0f4c-46c7-a502-63c3a2369cac" />
-)
-![Best Worst Seller](<img width="1178" height="643" alt="image" src="https://github.com/user-attachments/assets/fc29ce96-bf3d-4bcd-982b-438553cdd71e" />
-)
+## Tech Stack
+The dashboard was built using the following tools and technologies:
+- 📊 Power BI Desktop – Main data visualization platform used for report creation
+- 📁 Power Query – Data cleaning and transformation layer for reshaping raw order timestamps into daily/monthly trend fields
+- 🧮 DAX (Data Analysis Expressions) – Used for calculated KPI measures: Total Revenue, Total Orders, Total Pizzas Sold, Avg Pizzas Per Order, Avg Order Value
+- 📄 Data Modeling – Single fact table (pizza_sales) at the order-line grain, with category, size, and date attributes enabling cross-filtering across all visuals
+- 📁 File Format – .pbix for development, .csv for the raw data source, .png for dashboard previews
 
-## Dataset
-- Size: 48,621 rows | Jan 2015 – Dec 2015
-- Fields: Order ID, Pizza name, Category, Size, Quantity, Price, Date
+## Data Source
+Source: pizza_sales.csv — a transactional order-line dataset from a pizzeria.
 
-## Key Insights
-- Total Revenue: $817.86K | Total Orders: 21,350 | Pizzas Sold: 49,574
-- Peak Day: Friday (3.5K orders) | Peak Month: July (1,935 orders)
-- Top seller by revenue: Thai Chicken Pizza ($43K)
-- Worst seller: Brie Carre Pizza ($12K)
-- Classic category leads with 26.91% of total sales
-- Large size contributes 45.89% of total quantity sold
-
-## Features
-- DAX KPIs: Total Revenue, Orders, Avg Order Value, Pizzas Sold
-- Daily and monthly trend analysis
-- Best/Worst Seller page (Top 5 & Bottom 5 by revenue, quantity, orders)
-- Dynamic slicers filterable by Pizza Category and Date Range
-- Drill-down navigation across two report pages
+Contains 48,620 order-line records spanning January 1 – December 31, 2015 (21,350 unique orders). Each row represents one pizza within an order, with fields for order ID, pizza ID, quantity, order date/time, unit price, total price, pizza size (S/M/L/XL/XXL), pizza category (Classic/Veggie/Supreme/Chicken), ingredients, and pizza name.
 
 ## Tools Used
 | Tool | Purpose |
