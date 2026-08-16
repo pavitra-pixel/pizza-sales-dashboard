@@ -52,4 +52,5 @@ Page 2 — Best / Worst Seller
 - Category Focus: Classic pizzas outsell every other category in both units and revenue share, suggesting core recipes remain the strongest traffic driver even as specialty categories (Chicken, Supreme) are added
 
 ## Screenshots / Demos
-![images/home-page.png](https://github.com/pavitra-pixel/powerbi-sales-analytics-dashboard/blob/main/Home.png)
+![Home](https://github.com/pavitra-pixel/powerbi-sales-analytics-dashboard/blob/main/Home.png)
+![best/worst seller](https://github.com/pavitra-pixel/powerbi-sales-analytics-dashboard/blob/main/Best_Worst%20seller.png)
